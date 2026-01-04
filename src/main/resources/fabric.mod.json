@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "dkp",
+  "version": "${version}",
+  "name": "dkp",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/dkp/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.daimon.dkp.client.DkpDataGenerator"
+    ],
+    "client": [
+      "net.daimon.dkp.client.DkpClient"
+    ],
+    "main": [
+      "net.daimon.dkp.Dkp"
+    ]
+  },
+  "mixins": [
+    "dkp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
