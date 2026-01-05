@@ -17,7 +17,7 @@ public abstract class ModelLoaderMixin {
 
     @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 1))
     private void onInit(CallbackInfo ci) {
-        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Dkp.MOD_ID, "infinite_sok_2d")));
+//        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Dkp.MOD_ID, "infinite_sok_2d")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Dkp.MOD_ID, "infinite_sok_3d")));
     }
 }
