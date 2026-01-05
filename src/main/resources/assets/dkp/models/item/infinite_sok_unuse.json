@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "dkp:item/infinite_sok_2d",
+		"particle": "dkp:item/infinite_sok_2d"
+	},
+	"elements": [
+		{
+			"from": [1, 1, 1],
+			"to": [15, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 6]},
+			"faces": {
+				"north": {"uv": [0, 1, 14, 1], "texture": "#missing"},
+				"east": {"uv": [0, 1, 13, 1], "texture": "#missing"},
+				"south": {"uv": [0, 1, 14, 1], "texture": "#missing"},
+				"west": {"uv": [0, 1, 13, 1], "texture": "#missing"},
+				"up": {"uv": [1, 0, 15, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 14, 13], "texture": "#missing"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0.75, 0]
+		}
+	}
+}
