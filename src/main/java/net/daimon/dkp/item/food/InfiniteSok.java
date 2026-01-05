@@ -5,6 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
@@ -13,11 +14,12 @@ public class InfiniteSok extends Item {
     public InfiniteSok() {
         super(new Item.Settings()
                 .maxCount(1)
+                .rarity(Rarity.UNCOMMON)
                 .food(
                         new FoodComponent.Builder()
                                 .alwaysEdible()
-                                .nutrition(2)
-                                .saturationModifier(1.0F)
+                                .nutrition(1)
+                                .saturationModifier(0.5F)
                                 .build()
         ));
     }
